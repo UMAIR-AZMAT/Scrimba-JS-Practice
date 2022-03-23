@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Task 05 error rendering -->
+    <img src="download.png" alt="Nike shoe">
+    <p>Sports Car</p>
+    <button onClick="error()">Purchase - $1590000</button>
+    <p id="error"></p>
+    <hr>
+    <!-- task-6 (Calculator) -->
+    <h1>Calculator</h1>
+    Num1:<span id="num1-el"></span> <br>
+    Num2:<span id="num2-el"></span>
+    <br>
+    <br>
+    <button onClick="add_num()">Add</button>
+    <button onClick="sub_num()">Subtract</button>
+    <button onClick="div_num()">Divide</button>
+    <button onClick="mul_num()">Multiply</button>
+    <br>
+    <br>
+    <span id="sum-el">Result: </span> <br>
+    <button id="reset" onClick="reset()">reset</button>
+    <hr>
+    <!-- task solo challenge -->
+    <!-- Unit Convertor App -->
+    <div id="main"><br><br>
+        <h3>Metric/Imperial unit conversion</h3>
+        <input type="number" id="numberValue" name="numberValue" min="0">
+        <button onclick="convert()">Change Number</button>
+        <h2 id="calcNumber"></h2>
+    </div>
+    <div class="resultsBlock">
+        <h3>Lenght (Meter/Feet)</h3>
+        <span id="calcFeetEl"></span> | <span id="calcMeterEl"></span>
+        <h3>Volume (Liters/Gallons)</h3>
+        <p><span id="calcLitersEl"></span> | <span id="calcGallonsEl"></span></p>
+        <h3>Mass (Kilograms/Pounds)</h3>
+        <p><span id="calcKilosEl"></span> | <span id="calcPoundsEl"></span></p>
+    </div>
+    <script src="index.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
